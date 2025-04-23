@@ -52,6 +52,30 @@ fun main() {
     println("Most common transaction type: $mostCommon")
 }</pre>
 
+**Problems:**
+
+1. Two Sum (HashMap Approach)
+HackerRank problem: Two Sum
+2. Longest Substring Without Repeating Characters (Sliding Window)
+HackerRank problem: Longest Substring Without Repeating Characters
+3. Merge Intervals (Sorting + Greedy Approach)
+HackerRank problem: Merge Intervals
+4. Kth Largest Element in an Array (Heap/Binary Search)
+HackerRank problem: Kth Largest Element
+5. Find Duplicate in Array (Floyd’s Tortoise and Hare Algorithm)
+HackerRank problem: Find Duplicate
+6. Word Ladder (BFS)
+HackerRank problem: Word Ladder
+7. Climbing Stairs (Dynamic Programming – Fibonacci Variant)
+HackerRank problem: Climbing Stairs
+8. Subset Sum Problem (Backtracking/DP)
+HackerRank problem: Subset Sum (Knapsack-style DP problems)
+9. Lowest Common Ancestor in a Binary Tree (DFS) Depth First Search
+HackerRank problem: Lowest Common Ancestor
+10. Binary Search in Rotated Sorted Array
+HackerRank problem: Binary Search in Rotated Sorted Array
+
+
 **Resources:**
 
 •	LeetCode (Focus on Medium/Hard problems)
