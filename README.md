@@ -1,4 +1,4 @@
-**Kotlin Function Examples:**
+**Kotlin/ JS/ SQL Function/ Code Examples:**
 
 1. Reduce Function
 The reduce function takes an accumulator and applies an operation to each element in the collection.
