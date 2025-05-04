@@ -74,6 +74,7 @@ HackerRank problem: Subset Sum (Knapsack-style DP problems)
 HackerRank problem: Lowest Common Ancestor
 10. Binary Search in Rotated Sorted Array
 HackerRank problem: Binary Search in Rotated Sorted Array
+11. Finding shortest path in directed graph with not same weights using Dijkstra algorithm.
 
 
 **Resources:**
