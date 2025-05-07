@@ -75,6 +75,7 @@ HackerRank problem: Lowest Common Ancestor
 10. Binary Search in Rotated Sorted Array
 HackerRank problem: Binary Search in Rotated Sorted Array
 11. Finding shortest path in directed graph with not same weights using Dijkstra algorithm.
+12. Finding minimum wight path via spanning tree. MSP with Kuskal's algorithm.
 
 
 **Resources:**
