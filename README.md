@@ -77,6 +77,7 @@ HackerRank problem: Binary Search in Rotated Sorted Array
 11. Finding shortest path in directed graph with not same weights using Dijkstra algorithm.
 12. Finding minimum wight path via spanning tree. MSP with Kuskal's algorithm.
 13. Finding the smallest amount of needed resources on the bideractional graph using DFS
+14. Forming magic square. Finding the best solution that requires the smallest cost
 
 
 **Resources:**
