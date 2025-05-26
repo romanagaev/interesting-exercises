@@ -78,6 +78,7 @@ HackerRank problem: Binary Search in Rotated Sorted Array
 12. Finding minimum wight path via spanning tree. MSP with Kuskal's algorithm.
 13. Finding the smallest amount of needed resources on the bideractional graph using DFS
 14. Forming magic square. Finding the best solution that requires the smallest cost
+15. Picking numbers. Given an array of integers, find the longest subarray where the absolute difference between any two elements is less than or equal to 1.
 
 
 **Resources:**
