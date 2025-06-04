@@ -79,6 +79,7 @@ HackerRank problem: Binary Search in Rotated Sorted Array
 13. Finding the smallest amount of needed resources on the bideractional graph using DFS
 14. Forming magic square. Finding the best solution that requires the smallest cost
 15. Picking numbers. Given an array of integers, find the longest subarray where the absolute difference between any two elements is less than or equal to 1.
+16. Given a set of distinct integers, print the size of a maximal subset of  where the sum of any  numbers in  is not evenly divisible by .
 
 
 **Resources:**
