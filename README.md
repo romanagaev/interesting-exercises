@@ -100,4 +100,9 @@ HackerRank problem: Binary Search in Rotated Sorted Array
     The encoded message is obtained by displaying the characters of each column, with a space between column texts. The encoded message for the grid above is:
 
     imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
+18. Lexicographical order is often known as alphabetical order when dealing with strings. A string is greater than another string if it comes later in a lexicographically sorted list.
+
+Given a word, create a new word by swapping some or all of its characters. This new word must meet two criteria:
+    1.It must be greater than the original word
+    2.It must be the smallest word that meets the first condition
 
