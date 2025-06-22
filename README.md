@@ -105,5 +105,6 @@ HackerRank problem: Binary Search in Rotated Sorted Array
 Given a word, create a new word by swapping some or all of its characters. This new word must meet two criteria:
     1.It must be greater than the original word
     2.It must be the smallest word that meets the first condition
+    
 19. Given two positive integers p and q where p is lower than q, write a program to print the modified Kaprekar numbers in the range between p and q, inclusive. If no modified Kaprekar numbers exist in the given range, print INVALID RANGE.
 
