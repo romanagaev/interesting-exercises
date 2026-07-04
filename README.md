@@ -11,118 +11,89 @@ A collection of algorithm and data structure problems with solutions — coverin
 
 ---
 
-## Kotlin / JS / SQL Function & Code Examples
+## Problems
 
-1. Reduce Function
-The reduce function takes an accumulator and applies an operation to each element in the collection.
-<pre>val numbers = listOf(1, 2, 3, 4, 5)
-val sum = numbers.reduce { acc, num -> acc + num }
-println(sum)  // Output: 15</pre>
+### Graph Algorithms
 
-2. Filter Function
-The filter function returns a list containing only the elements that satisfy a given condition.
-<pre>val numbers = listOf(1, 2, 3, 4, 5)
-val evens = numbers.filter { it % 2 == 0 }
-println(evens)  // Output: [2, 4]</pre>
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 1 | [Shortest Path in Directed Graph](shortest%20path%20in%20directed%20graph.js) | Dijkstra's Algorithm, Min-Heap | JavaScript |
+| 2 | [Minimum Weight Path over Spanning Tree](minimum%20weight%20path%20over%20spaning%20tree.kt) | Kruskal's MST, Union-Find | Kotlin |
+| 3 | [Smallest Amount of Resources on Bidirectional Graph](finding%20the%20smallest%20amount%20of%20needed%20resources%20on%20the%20bidrectional%20graph%20using%20DFS.kt) | DFS, Connected Components | Kotlin |
 
-3. Difference Between Reduce and Filter
-•	reduce accumulates a result from all elements.
-•	filter selects elements based on a condition.
-Example:
-<pre>val numbers = listOf(1, 2, 3, 4, 5)
-val sumOfEvens = numbers.filter { it % 2 == 0 }.reduce { acc, num -> acc + num }
-println(sumOfEvens)  // Output: 6 (2 + 4)</pre>
+### Trees
 
-4. Apply vs Also
-•	apply: Modifies the object and returns it.
-•	also: Executes a block and returns the same object.
-Example:
-<pre>class Person(var name: String, var age: Int)
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 4 | [Lowest Common Ancestor in a Binary Tree](lowest%20common%20ancestor%20in%20a%20binary%20tree.kt) | DFS (Depth-First Search) | Kotlin |
 
-val person = Person("Alice", 25).apply {
-    age = 30
-}
-println(person.age)  // Output: 30
+### Dynamic Programming
 
-val person2 = Person("Bob", 25).also {
-    println("Created: ${it.name}, Age: ${it.age}")
-}
-person2.name = "Charlie"  // `also` does not run again automatically</pre>
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 5 | [Climbing Stairs](climbing%20stairs%20dynamic%20programming%20fibonachhi%20variant.kt) | Fibonacci Variant (iterative + recursive) | Kotlin |
+| 6 | [Subset Sum Problem](subset%20sum%20problem%20backtracking.kt) | DP (Knapsack-style) | Kotlin |
 
+### Binary Search
 
-**Example Coding Questions:**
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 7 | [Binary Search in Rotated Sorted Array](binary%20search%20in%20rotated%20sorted%20array.kt) | Modified Binary Search | Kotlin |
 
-Find the most common transaction type in a dataset
-<pre>fun mostCommonTransactionType(transactions: List<String>): String? {
-    return transactions.groupingBy { it }
-        .eachCount()
-        .maxByOrNull { it.value }?.key
-}
+### Arrays & Hash Maps
 
-fun main() {
-    val transactions = listOf("Deposit", "Withdrawal", "Deposit", "Transfer", "Deposit", "Withdrawal")
-    val mostCommon = mostCommonTransactionType(transactions)
-    println("Most common transaction type: $mostCommon")
-}</pre>
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 8 | [Two Sum](two-sum%20hashmap%20approach.kt) | HashMap Lookup | Kotlin |
+| 9 | [Find Duplicate in Array](find%20duplicate%20in%20array.kt) | Floyd's Tortoise and Hare | Kotlin |
+| 10 | [Merge Intervals](merge%20intervals%20sorting%20greedy%20approach.kt) | Sorting + Greedy | Kotlin |
+| 11 | [Kth Largest Element in an Array](kth%20largest%20element%20in%20an%20array%20-%20heap%20binary%20search.kt) | Min-Heap (PriorityQueue) | Kotlin |
+| 12 | [Picking Numbers](picking%20numbers.kt) | Sorting, Subarray Search | Kotlin |
+| 13 | [Non-Divisible Subset](longest%20subset%20with%20pair%20non%20divisive%20by%20k.kt) | Modular Arithmetic, Frequency Counting | Kotlin |
 
-**Problems:**
+### Strings
 
-1. Two Sum (HashMap Approach)
-HackerRank problem: Two Sum
-2. Longest Substring Without Repeating Characters (Sliding Window)
-HackerRank problem: Longest Substring Without Repeating Characters
-3. Merge Intervals (Sorting + Greedy Approach)
-HackerRank problem: Merge Intervals
-4. Kth Largest Element in an Array (Heap/Binary Search)
-HackerRank problem: Kth Largest Element
-5. Find Duplicate in Array (Floyd’s Tortoise and Hare Algorithm)
-HackerRank problem: Find Duplicate
-6. Word Ladder (BFS)
-HackerRank problem: Word Ladder
-7. Climbing Stairs (Dynamic Programming – Fibonacci Variant)
-HackerRank problem: Climbing Stairs
-8. Subset Sum Problem (Backtracking/DP)
-HackerRank problem: Subset Sum (Knapsack-style DP problems)
-9. Lowest Common Ancestor in a Binary Tree (DFS) Depth First Search
-HackerRank problem: Lowest Common Ancestor
-10. Binary Search in Rotated Sorted Array
-HackerRank problem: Binary Search in Rotated Sorted Array
-11. Finding shortest path in directed graph with not same weights using Dijkstra algorithm.
-12. Finding minimum wight path via spanning tree. MSP with Kuskal's algorithm.
-13. Finding the smallest amount of needed resources on the bideractional graph using DFS
-14. Forming magic square. Finding the best solution that requires the smallest cost
-15. Picking numbers. Given an array of integers, find the longest subarray where the absolute difference between any two elements is less than or equal to 1.
-16. Given a set of distinct integers, print the size of a maximal subset of  where the sum of any  numbers in  is not evenly divisible by .
-17. An English text needs to be encrypted using the following encryption scheme.
-    First, the spaces are removed from the text. Let L be the length of this text.Then, characters are written into a grid, whose rows and columns have the following constraints:
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 14 | [Longest Substring Without Repeating Characters](longest%20substring%20without%20repeating%20characters.kt) | Sliding Window | Kotlin |
+| 15 | [Encrypted String](encryted%20string.kt) | Grid Transposition Cipher | Kotlin |
 
-    Example
+### Math & Number Theory
 
-    After removing spaces, the string is  characters long.  is between  and , so it is written in the form of a grid with 7 rows and 8 columns.
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 16 | [Forming Magic Square](forming%20magic%20square.kt) | Brute Force over all 3x3 magic squares | Kotlin |
+| 17 | [Kaprekar Numbers in Range](kaprekar%20number%20in%20the%20given%20range.kt) | Number Theory, String Splitting | Kotlin |
+| 18 | [Special Problems in the Workbook](count%20special%20problems%20in%20the%20math%20book.kt) | Simulation, Page Indexing | Kotlin |
 
-    ifmanwas  
-    meanttos          
-    tayonthe  
-    groundgo  
-    dwouldha  
-    vegivenu  
-    sroots
-    
-    Ensure that 
-    If multiple grids satisfy the above conditions, choose the one with the minimum area, i.e. .
-    The encoded message is obtained by displaying the characters of each column, with a space between column texts. The encoded message for the grid above is:
+### Matrix
 
-    imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
-18. Lexicographical order is often known as alphabetical order when dealing with strings. A string is greater than another string if it comes later in a lexicographically sorted list.
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 19 | [Cavity Map Detection](cavity%20map%20detection.kt) | Matrix Traversal, Adjacent Cell Comparison | Kotlin |
 
-Given a word, create a new word by swapping some or all of its characters. This new word must meet two criteria:
-    1.It must be greater than the original word
-    2.It must be the smallest word that meets the first condition
-    
-19. Given two positive integers p and q where p is lower than q, write a program to print the modified Kaprekar numbers in the range between p and q, inclusive. If no modified Kaprekar numbers exist in the given range, print INVALID RANGE.
+### System Design Snippets
 
-20. Lisa just got a new math workbook. A workbook contains exercise problems, grouped into chapters. Lisa believes a problem to be special if its index (within a chapter) is the same as the page number where it's located. 
-21. You are given a square map as a matrix of integer strings. Each cell of the map has a value denoting its depth. We will call a cell of the map a cavity if and only if this cell is not on the border of the map and each cell adjacent to it has strictly smaller depth. Two cells are adjacent if they have a common side, or edge.
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 20 | [LRU Cache](efficient%20caching%20system%20for%20AI-generated%20recommendations.kt) | LinkedHashMap, Eviction Policy | Kotlin |
+| 21 | [Data Pipeline Optimization](data%20pipeline%20for%20large-scale%20AI%20model%20training.kt) | Sequences, Lazy Evaluation | Kotlin |
+| 22 | [Real-Time Anomaly Detection](real-time%20anomaly%20detection%20algorithm.kt) | Z-Score, Standard Deviation | Kotlin |
 
-Find all the cavities on the map and replace their depths with the uppercase character X.
+### SQL
 
+| # | Problem | Technique | Language |
+|---|---------|-----------|----------|
+| 23 | [Top 3 Salaries per Department](top%20three%20salaries%20in%20different%20department.sql) | `DENSE_RANK()`, Window Functions | SQL |
+
+---
+
+## Languages
+
+- **Kotlin** — 21 solutions
+- **JavaScript** — 1 solution
+- **SQL** — 1 solution
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
