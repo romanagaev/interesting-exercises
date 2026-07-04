@@ -1,4 +1,17 @@
-**Kotlin/ JS/ SQL Function/ Code Examples:**
+# Interesting Exercises
+
+A collection of algorithm and data structure problems with solutions — covering graph algorithms, dynamic programming, binary search, sorting, and more.
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+`algorithms` `data-structures` `coding-exercises` `hackerrank` `problem-solving`
+
+---
+
+## Kotlin / JS / SQL Function & Code Examples
 
 1. Reduce Function
 The reduce function takes an accumulator and applies an operation to each element in the collection.
